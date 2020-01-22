@@ -42,7 +42,7 @@ npm run dev
 
 WINDOWS
 ```
-npm run devWindows
+npm run dev-windows
 ```
 
 Cuando aparezca en la consola Listening on 9000 podemos cerrar todo y ya tenemos el taller listo para comenzar :)
