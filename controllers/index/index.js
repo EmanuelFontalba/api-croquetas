@@ -6,4 +6,4 @@ router.get('/', function(req, res, next) {
   res.send('Status checked');
 });
 
-module.exports = { router };
+module.exports = router;

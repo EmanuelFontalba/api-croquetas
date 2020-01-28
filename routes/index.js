@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const indexRouter = require('../controllers/index/index');
-const usersRouter = require('../controllers/users');
 
 // GET
 // /users
