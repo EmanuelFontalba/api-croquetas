@@ -7,12 +7,15 @@ const logger = require('morgan');
 const api = require('./routes');
 
 const app = express();
+var bodyParser = require('body-parser');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.use(api);
 
