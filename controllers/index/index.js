@@ -1,5 +1,9 @@
-const getStatus = (req, res, next) => {
-  res.send('Status checked');
-};
+const express = require('express');
+const router = express.Router();
 
-module.exports = { getStatus };
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.send('Status checked');
+});
+
+module.exports = { router };

@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { getStatus } = require('../controllers/index/index');
+const indexRouter = require('../controllers/index/index');
+const usersRouter = require('../controllers/users');
 
 // GET
 // /users
@@ -20,6 +21,6 @@ const { getStatus } = require('../controllers/index/index');
 // DELETE
 // /user/:id
 
-router.use('/', getStatus);
+router.use('/', indexRouter);
 
 module.exports = router;
